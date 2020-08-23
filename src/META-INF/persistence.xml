@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="DepartmentPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>empreport.newpackage.Employee1</class>
+    <class>empreport.newpackage.Department</class>
+    <class>empreport.newpackage.Accounts</class>
+    <class>empreport.newpackage.Employee</class>
+    <class>empreport.newpackage.History_1</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Department"/>
+      <property name="javax.persistence.jdbc.user" value="sooraj"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="sooraj"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="FamilyPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>empreport.newpackage.Family_1</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Family"/>
+      <property name="javax.persistence.jdbc.user" value="sooraj"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="sooraj"/>
+    </properties>
+  </persistence-unit>
+</persistence>
